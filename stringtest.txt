@@ -1,0 +1,9 @@
+int i = malloc(sizeof(j));
+float evil_glob_var_2;
+
+void fun1(int x)
+{
+  int y;
+  int z;
+  printf("%d \n", x+y+z); 
+}
