@@ -35,7 +35,7 @@ int main() {
         close(fd[0]);
 
         printf("Enter a line > ");
-        while (fgets(line, MAXSIZE, stdin) != NULL) {
+        while (fgets(line, MAXSIZE, stdin) != NULL) { 
 
             printf("[%d] writing to pipe\n", getpid());
             if (write(fd[1], line, MAXSIZE) == -1) {
